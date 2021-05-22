@@ -254,6 +254,8 @@ class AIXBuild(UnixBuild):
     configureFlags = [
         "--with-pydebug",
         "--with-openssl=/opt/aixtools",
+        "CPPFLAGS=\"-I/opt/freeware/include/ncurses -I/opt/freeware/include\"",
+        "LDFLAGS=-L/opt/freeware/lib",
     ]
     
     
